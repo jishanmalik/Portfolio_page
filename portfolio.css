@@ -1,0 +1,275 @@
+ .logo{
+  font-family:fantasy;
+ }
+ .parent{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  height: 1950px;
+  gap: 20px;
+  background-color: #021024;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.card{
+  grid-template-columns: repeat(2,1fr);
+  display: inline-block;
+  color: #38bdf4;
+  text-align: center;
+  height: 340px;
+  width: 100%;
+  background: rgba(15, 23, 42, .95);
+  transition: all .5s ease-in-out;
+  font-family: fantasy;
+}
+
+#img{
+
+  transition: all .5s ease-in-out;
+  border-radius: 10%;
+}
+#foot{
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  transition: all .5s ease-in-out;
+}
+#foot:hover{
+   color: white;
+   font-size: large;
+   transform: scale(1.021); 
+} 
+.intro{
+  background-color:rgb(205, 213, 188);
+}
+#img:hover{
+  color: white;
+  box-shadow: 8px 8px 8px;
+}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    background: #0f172a;
+    color: #f8fafc;
+    line-height: 1.6;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  h1, h2, h3 {
+    font-weight: 600;
+  }
+
+  section {
+    padding: 80px 10%;
+  }
+
+  nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(15, 23, 42, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    z-index: 1000;
+  }
+
+  nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #38dbf8;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+
+  nav ul li a {
+    color: #f8fafc;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: #38bdf8;
+  }
+
+   .hero {
+    height: 100vh;
+    display: flex; 
+  align-items: center; 
+ justify-content: space-between; 
+ padding-top: 130px; 
+  } 
+  .hero-text{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 130px;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+    color: #38bdf8;
+  }
+
+  .hero-text p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #cbd5e1;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #38bdf8;
+    color: #0f172a;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  .btn1{
+    display: inline-block;
+    padding: 12px 30px;
+    background: rgba(131, 227, 195,.8);
+    color: #0f172a;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+
+  }
+  .btn1:hover {
+    background: rgba(131,227,195,.6);
+  }
+
+  .btn:hover {
+    background: rgba(56, 189, 248,.6);
+  }
+
+  .about {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 60px;
+  }
+
+  .about h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #38bdf8;
+  }
+
+ 
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    text-align: center;
+  }
+
+  .skill {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  .skill:hover {
+    transform: translateY(-5px);
+    background: #334155;
+  }
+
+
+  .education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+
+  .education-card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+  }
+
+  .education-card:hover{
+    transform: translateY(-5px);
+    background: #334155;
+  }
+
+  .education-card h3{
+    color: #38bdf8;
+    margin-bottom: 10px;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+
+  .project-card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+    background: #334155;
+  }
+
+  .project-card h3 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e293b;
+    margin-top: 40px;
+    border-radius: 12px 12px 0 0;
+  };
+
+  .contacts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    text-align: center;
+  }
+
+  .contact {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  .contact:hover {
+    transform: translateY(-5px);
+    background: #334155;
+  }
+
+
+  
+
+ 
+
+ 
+ 
