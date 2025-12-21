@@ -1,2 +1,2 @@
 # Portfolio_page
-This is a complete portfolio page created by me using basic HTML CSS only 
+This is a portfolio page created by me using basic HTML CSS only.
